@@ -7,8 +7,8 @@ Python ve yt-dlp kütüphanesi kullanılarak geliştirilmiş, YouTube videoları
 ## Özellikler
 
 * **Çözünürlük Seçimi:** Mevcut tüm formatları listeler ve kullanıcı seçimine sunar.
-* **Varsayılan En İyi Kalite:** ID belirtilmediğinde otomatik olarak en yüksek video ve ses kalitesini birleştirir.
-* **Dinamik Yol Seçimi:** Videoların nereye indirileceğini çalışma anında belirleyebilirsiniz.
+* **Varsayılan En İyi Kalite:** ID belirtilmediğinde otomatik olarak mevcut en yüksek video ve ses kalitesini birleştirir.
+* **Dinamik Yol Seçimi:** Videoların nereye indirileceğini çalışma anında belirleyebilirsiniz (Varsayılan: Masaüstü).
 * **Çerez Desteği:** YouTube kısıtlamalarını aşmak için Firefox çerezlerini kullanır.
 
 ![İndirme İşlemi](ss2.png)
@@ -24,7 +24,7 @@ sudo pacman -S ffmpeg
 
 ### Windows
 FFmpeg'i sisteme iki şekilde kurabilirsiniz:
-1. **Winget ile (Daha basit ve sorunsuz):** Terminalinize `winget install ffmpeg` yazın.
+1. **Winget ile (Önerilen):** Terminalinize `winget install ffmpeg` yazın.
 2. **Manuel:** [ffmpeg.org](https://ffmpeg.org/download.html) üzerinden indirip `bin` klasörünü sistem PATH değişkenine ekleyin.
 
 ## Kurulum ve Kullanım
@@ -45,9 +45,9 @@ python -m venv .venv
 # Aktifleştirme (Windows): .venv\Scripts\activate
 ```
 
-### 3. yt_dlp Paketini Kurun
+### 3. yt-dlp Paketini Kurun
 ```bash
-pip install yt_dlp
+pip install yt-dlp
 ```
 
 ### 4. Programı Çalıştırın
